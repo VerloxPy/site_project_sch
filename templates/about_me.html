@@ -1,0 +1,54 @@
+<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<header class="bg-primary text-white py-3">
+  <div class="container d-flex justify-content-between align-items-center">
+    <h1 class="h3 m-0">Олексій Курячий</h1>
+    <nav>
+      <a href="{{ url_for('home') }}" class="text-white text-decoration-none mx-2">Про себе</a>
+      <a href="{{ url_for('studying') }}" class="text-white text-decoration-none mx-2">Навчання і досвід</a>
+      <a href="{{ url_for('works') }}" class="text-white text-decoration-none mx-2">Проекти</a>
+      <a href="{{ url_for('feedback') }}" class="text-white text-decoration-none mx-2">Контакти</a>
+    </nav>
+  </div>
+</header>
+
+    {% block content %}
+
+<div class="container my-4">
+  <img src="{{ url_for('static', filename='images/leha.jpg') }}"
+       alt="Курячий портрет"
+       class="img-fluid rounded"
+       style="max-width: 310px;">
+  <section class="container my-5">
+
+  <h3 class="mb-4">Про себе</h3>
+  <p class="fs-5">
+    Мене звати <strong>Олексій Курячий</strong>. Я — початківець розробник з великим бажанням вчитись, експериментувати та створювати щось по-справжньому корисне. Моє захоплення програмуванням почалося з Python, зокрема з роботи над невеликими проєктами на Flask, Tkinter та Pygame.
+  </p>
+  <p class="fs-5">
+    Люблю розбиратися в логіці систем, оптимізовувати код і шукати витончені рішення навіть для найтупіших помилок. Маю досвід розробки вебінтерфейсів з використанням HTML, CSS і Bootstrap, трохи граюся з автоматизацією на AutoHotkey і поступово занурююсь у світ алгоритмів, структур даних і, як це не дивно, документації.
+  </p>
+  <p class="fs-5">
+    Поза комп’ютером — беру участь у математичних олімпіадах, граю в DnD, а іноді ловлю дзен, спостерігаючи, як росте код. Мрію створити власну гру або вебзастосунок, який стане в пригоді не лише мені.
+  </p>
+</section>
+</div>
+  
+
+
+
+
+
+    {% endblock content %}
+
+</body>
+</html>

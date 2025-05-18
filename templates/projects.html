@@ -1,0 +1,55 @@
+{% extends "about_me.html" %}
+{% block content %}
+<h1>Проекти й роботи</h1>
+
+
+<div class="row">
+    <div class="card" style="width: 18rem;">
+      <img src="{{ url_for('static', filename='images/shop.jpg') }}" class="card-img-top" alt="тг магазин">
+      <div class="card-body">
+        <h5 class="card-title">Онлайн магазин</h5>
+        <p class="card-text">Створив телеграм бота що виконував функції онлайн магазину, приймав замовлення і надсилав їх мені</p>
+      </div>
+    </div>
+
+
+    <div class="card" style="width: 18rem;">
+      <img src="https://th.bing.com/th/id/R.7c0dbf2831aa0919b048d7f53c84f107?rik=1BsCCoD36mjiaQ&pid=ImgRaw&r=0" class="card-img-top" alt="банк">
+      <div class="card-body">
+        <h5 class="card-title">банківська система</h5>
+        <p class="card-text">Розробив проект банківської системи з функціями конвертації валют, переказу з рахунку на рахунок, додавання нових валют до гаманця і тд...</p>
+      </div>
+    </div>
+
+
+    <div class="card" style="width: 18rem;">
+      <img src="https://png.pngtree.com/png-clipart/20220430/original/pngtree-tic-tac-toe-pattern-png-png-image_7613072.png" class="card-img-top" alt="tic tac toe">
+      <div class="card-body">
+        <h5 class="card-title">гра "хрестики нулики"</h5>
+        <p class="card-text">один з найперших, але неменш важливий проект. назва говорить сама за себе</p>
+      </div>
+    </div>
+
+
+    <div class="card" style="width: 18rem;">
+        <img src="https://th.bing.com/th/id/OIP.EJEdewQ5CPLi5ucNXEP1pwHaD4?cb=iwp2&rs=1&pid=ImgDetMain" class="card-img-top" alt="сайти">
+        <div class="card-body">
+            <h5 class="card-title">Розробка сайтів</h5>
+            <p class="card-text">Протягом певного часу стаорював деякі сайти, такі як: інформаційні брошури, біографічні, рекламні і тд... досі цим займаюся, навіть при створюванні цього сайту</p>
+        </div>
+    </div>
+
+
+    <div class="card" style="width: 18rem;">
+        <img src="https://th.bing.com/th/id/R.28c9daf79b90c6df2839de6072dbe6c9?rik=BJAOx01Y5qHoiA&pid=ImgRaw&r=0" class="card-img-top" alt="API">
+        <div class="card-body">
+            <h5 class="card-title">API й бази данних</h5>
+            <p class="card-text">Багато працював з такими базами данних типу SQL як: SQLite, SQLAIchemy, postgraySQL. Також знайомий з API-єм в різних використаннях і формах.</p>
+        <div>
+    </div>
+
+</div>
+
+
+
+{% endblock content %}
